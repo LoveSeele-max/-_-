@@ -6,6 +6,7 @@
 #include <QDirIterator>
 #include <QFile>
 #include <QFileInfo>
+#include <QNetworkProxy>
 #include <QSet>
 #include <QTcpSocket>
 
@@ -56,6 +57,7 @@ void FileTransferClient::send(const QString &host,
     }
 
     QTcpSocket socket;
+    socket.setProxy(QNetworkProxy::NoProxy);
     emit logMessage(QStringLiteral("正在连接 %1:%2 ...").arg(host).arg(port));
     socket.connectToHost(host, quint16(port));
     if (!socket.waitForConnected(10000)) {
