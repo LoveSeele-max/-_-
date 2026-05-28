@@ -2,6 +2,8 @@
 
 作者标识：Liyiguang
 
+代码仓库：https://github.com/LoveSeele-max/-_-.git
+
 ## 1. 项目概述
 
 本项目采用 Qt6 设计并实现一个网络文件传输工具，设计目标是在 Windows 平台与树莓派 ARM 平台之间进行文件互传。程序基于 Qt Widgets 构建图形界面，基于 Qt Network 中的 `QTcpServer` 和 `QTcpSocket` 实现 TCP 通信。发送端支持选择单个文件、多个文件和目录；接收端支持指定保存目录、监听端口、自动创建目录结构，并对每个文件进行 SHA-256 校验。由于当前阶段未进行树莓派实机测试，运行验证部分采用另一台电脑中的 Ubuntu 虚拟机模拟 Linux/嵌入式接收端，与 Windows 主机进行互传测试。
@@ -214,11 +216,31 @@ cmake --build build -j4
 
 报告中可补充以下截图：
 
-1. Windows 端程序主界面截图。
-2. Ubuntu 虚拟机端程序主界面截图。
-3. Windows 向 Ubuntu 虚拟机发送文件时的进度截图。
-4. Ubuntu 虚拟机保存目录中接收成功的文件截图。
-5. 目录传输后的目录结构截图。
+1. 双机位传送，两端程序界面。
+
+   ![IMG_20260528_163422](E:\Embedded_Homework\docs\IMG_20260528_163422.jpg)
+
+2. Windows 向 Ubuntu 虚拟机发送文件时的进度截图。
+
+   ![IMG_20260528_165756](E:\Embedded_Homework\docs\IMG_20260528_165756.jpg)
+
+3. Ubuntu 虚拟机保存目录中接收成功的文件截图。
+
+   ![IMG_20260528_165800](E:\Embedded_Homework\docs\IMG_20260528_165800.jpg)
+
+4. 超300M大文件传输。
+
+   ![IMG_20260528_165918](E:\Embedded_Homework\docs\IMG_20260528_165918.jpg)
+
+   ![IMG_20260528_165918](E:\Embedded_Homework\docs\IMG_20260528_165918.jpg)
+
+5.  Ubuntu虚拟机 向 Windows 发送文件时的进度截图。
+
+   ![IMG_20260528_170017](E:\Embedded_Homework\docs\IMG_20260528_170017.jpg)
+
+6. Windows保存目录中接收成功的文件截图。
+
+   ![IMG_20260528_170019](E:\Embedded_Homework\docs\IMG_20260528_170019.jpg)
 
 ## 11. 总结
 

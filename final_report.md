@@ -2,6 +2,8 @@
 
 作者标识：Liyiguang
 
+代码仓库：https://github.com/LoveSeele-max/-_-.git
+
 ## 1. 项目概述
 
 本项目采用 Qt6 设计并实现一个网络文件传输工具，设计目标是在 Windows 平台与树莓派 ARM 平台之间进行文件互传。程序基于 Qt Widgets 构建图形界面，基于 Qt Network 中的 `QTcpServer` 和 `QTcpSocket` 实现 TCP 通信。发送端支持选择单个文件、多个文件和目录；接收端支持指定保存目录、监听端口、自动创建目录结构，并对每个文件进行 SHA-256 校验。由于当前阶段未进行树莓派实机测试，运行验证部分采用另一台电脑中的 Ubuntu 虚拟机模拟 Linux/嵌入式接收端，与 Windows 主机进行互传测试。
