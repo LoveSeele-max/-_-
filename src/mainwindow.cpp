@@ -100,7 +100,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::buildUi()
 {
-    setWindowTitle(QStringLiteral("Qt 网络文件传输工具"));
+    setWindowTitle(QStringLiteral("Qt 网络文件传输工具 - Liyiguang"));
     resize(980, 680);
 
     QWidget *central = new QWidget(this);

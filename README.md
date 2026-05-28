@@ -1,5 +1,7 @@
 # Qt6 网络文件传输工具
 
+作者标识：Liyiguang
+
 这是一个基于 Qt6 Widgets 和 Qt Network 的跨平台网络文件传输工具，可在 Windows 与树莓派 ARM 平台之间互传文件和目录。
 
 ## 功能
